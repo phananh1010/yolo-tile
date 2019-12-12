@@ -21,5 +21,13 @@ def load_model(img_size):
     model.load_darknet_weights(weights_path)
     model.eval()
     return model
-    
+
+def load_model_dict(img_size, state_dict):
+    device = t.device("cuda" if t.cuda.is_available() else "cpu")
+    model = models.Darknet(model_def, img_size=img_size).to(device)
+    model.load_state_dict(state_dict)
+    model.eval()
+    return model
+
+
 
