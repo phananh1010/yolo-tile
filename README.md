@@ -9,8 +9,8 @@ We tested this idea on CIFAR-10, an image classification dataset with 10,000 tra
 ## Evaluation
 We compare our tile-based network with a tiny-YOLO on the CIFAR-10 dataset. There is a few percentage drop of accuracy when going from 1x1 to 2x2 tiles compared with tiny-YOLO, and a little bit more drop when going up to 4x4 tiles. We are working to reduce this drop for large number of tiles.
 
-| Model               | CIFAR-10 acc  |
-| ------------------- | ------------- |
-| tiny-YOLO 416x416   | 88%           |
-| tile-2x2            | 86%           |
-| tile-4x4            | 81%           |
+| Model               | CIFAR-10 accuracy |
+| ------------------- | ----------------- |
+| tiny-YOLO 416x416   | 88%               |
+| tile-2x2            | 86%               |
+| tile-4x4            | 81%               |
